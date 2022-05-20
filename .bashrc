@@ -8,6 +8,9 @@ if [ -f $HOME/.bash/$HOSTNAME.sh ]; then
 elif [[ $DOMAIN == *"llnl.gov"* ]]; then
     echo "bash: loaded bashrc for LC"
     source $HOME/.bash/lc.sh
+elif [[ $DOMAIN == *"olcf.ornl.gov"* ]]; then
+    echo "bash: loaded bashrc for OLCF"
+    source $HOME/.bash/olcf.sh
 else
     echo "bash: loaded default bashrc"
     source $HOME/.bash/default.sh
